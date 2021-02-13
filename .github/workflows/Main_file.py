@@ -636,7 +636,7 @@ okleavebutton.place(x = 70,y = 300)
 
 
 
-win.iconbitmap(r"D:\python\vscode\app1\V2\Main_Logo.ico")
+win.iconbitmap(r"Main_Logo.ico")
 win.resizable(False, False)
 start.place(relwidth = 500, relheight = 500)
 win.mainloop()
