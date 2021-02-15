@@ -16,4 +16,6 @@ this only works on one machine.
 i didn't find how to come back from a screen so there is now option called back anywere in the system i will try to find it.
 evrything is saved in files.
 
+zip file containes .EXE file if you don't have python you can use that zip file!!!
+
 I am working on a diary app now really exited to show you guys.
