@@ -303,10 +303,11 @@ def loggedin():
         f.close()
     loginbutton.place_forget()
     logoutbutton.place(anchor = "center",x = 300,y = 400)
+    loginbutton2.place_forget()
+    logoutbutton2.place(anchor = "center",x = 300,y = 400)
     return   
         
 def loggedout():
-    print(uname2)
     with open("Log Public","a") as f:
         f.write("\n") 
         f.write("\n")        
@@ -334,8 +335,9 @@ def loggedout():
         f.close() 
 
     logoutbutton.place_forget()
-
     loginbutton.place(anchor = "center",x = 200,y = 400)
+    logoutbutton2.place_forget()
+    loginbutton2.place(anchor = "center",x = 200,y = 400)
     return
  
 def sucfai():
@@ -596,10 +598,9 @@ userpassword = tk.Entry(createnewuser, fg = "black", bg = "#D1D1D1", borderwidth
 userpassword.place(x = 85, y = 300)
 
 # SIGHNED USER SCREEN
+
 loginbutton2 = tk.Button(signeduser, text = "Log In", bg = "#5CFF5C", fg = "black", activebackground = "#8A8A8A", padx = 10, font = "bold", borderwidth=0,command = loggedin)
-
 logoutbutton2 = tk.Button(signeduser, text = "Log Out", bg = "#FF5C5C", fg = "black", activebackground = "#8A8A8A", padx = 10, font = "bold", borderwidth=0, command = loggedout)
-
 nameff = tk.Label(signeduser,text = "Loading", bg = "#2E2E2E", fg = "#189AB4", borderwidth=0, font = large_font, anchor = "center")
 nameff.place(anchor = "center",x = 250, y = 200)
 usernn = tk.Label(signeduser,text = "Loading", bg = "#2E2E2E", fg = "#D4F1F4", borderwidth=0, font = large_font, )
